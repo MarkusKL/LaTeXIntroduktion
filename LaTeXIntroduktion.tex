@@ -1,0 +1,103 @@
+\documentclass[titlepage]{article}
+
+
+
+\usepackage[utf8]{inputenc} % til at skrive æÆøØåÅ.
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs,latexsym}
+\usepackage[danish]{babel}
+\usepackage{ulem}
+\usepackage{graphicx}
+\usepackage{titlepic}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{framed,color}
+\usepackage[explicit]{titlesec}
+\usepackage{pstricks}
+\usepackage[amsmath,thmmarks]{ntheorem} %pakke til at lave sætningsenvorinmets (kan ikke loades sammen med amsthm)
+\usepackage{color}
+\usepackage{tikz}
+
+%opretter environmets til sætningsstrukturen 
+\theorembodyfont{\normalfont}
+
+	
+	%sætnings environment	
+	\newtheorem{thm}{Sætning}
+
+	\theoremstyle{break}	
+	%opgave environment	
+	\newtheorem{opg}{Øvelse}	
+
+	%Korrolar environment
+	\newtheorem{korollar}[thm]{Korollar}	
+	
+	%Lemma environment	
+	\newtheorem{lemma}[thm]{Lemma}
+	
+	\theoremsymbol{\ensuremath{\circ}}	
+	
+	%definition environment	
+	\newtheorem{definition}[thm]{Definition}
+	
+	%eksempel environment	
+	\newtheorem{eksempel}[thm]{Eksempel}
+	
+	
+	
+	%Bevis environment
+	\theoremstyle{nonumberplain}
+	\theoremheaderfont{%
+	\normalfont\itshape}
+	\theorembodyfont{\normalfont}
+	\theoremsymbol{\ensuremath{\square}}
+	\theoremseparator{.}
+	
+	\newtheorem{proof}{Bevis}
+	\newtheorem{los}{Løsning}
+	
+
+
+\setlength\parindent{0pt}
+
+%\titleformat{\section}{\Large\bfseries}{}{0pt}{#1}
+%\titleformat{\subsection}{\large\bfseries}{}{0pt}{#1}
+
+
+%nye komandoer
+\newcommand{\mR}{\mathbb{R}}
+\newcommand{\mZ}{\mathbb{Z}}
+\newcommand{\mN}{\mathbb{N}}
+\newcommand{\mQ}{\mathbb{Q}}
+\newcommand{\mC}{\mathbb{C}}
+\newcommand{\hs}{\hspace{2mm}}
+\newcommand{\Hs}{\hspace{4mm}}
+\newcommand{\pipe}{\hs | \hs}
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+\newcommand{\vect}[1]{\underline{#1}}
+\newcommand{\matr}[1]{\underline{\underline{#1}}}
+\newcommand{\cnum}[1]{\raisebox{.5pt}{\textcircled{\raisebox{-.9pt} {#1}}}}
+%\numberwithin{equation}{section}
+
+
+%forside
+\title{Introduktion til \LaTeX{} }
+\author{Markus Krabbe & Mikkel Goldschmidt}
+\date{\today}
+%\titlepic{\includegraphics[width=1\textwidth]{}}
+
+\begin{document}
+
+.
+
+
+
+\end{document}
