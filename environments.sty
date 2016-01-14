@@ -1,0 +1,36 @@
+\ProvidesPackage{environments}
+
+%opretter environmets til sætningsstrukturen 
+\theorembodyfont{\normalfont}
+	
+	%sætnings environment	
+	\newtheorem{thm}{Sætning}
+
+	\theoremstyle{break}	
+	%opgave environment	
+	\newtheorem{opg}{Øvelse}	
+
+	%Korrolar environment
+	\newtheorem{korollar}[thm]{Korollar}	
+	
+	%Lemma environment	
+	\newtheorem{lemma}[thm]{Lemma}
+	
+	\theoremsymbol{\ensuremath{\circ}}	
+	
+	%definition environment	
+	\newtheorem{definition}[thm]{Definition}
+	
+	%eksempel environment	
+	\newtheorem{eksempel}[thm]{Eksempel}
+		
+	%Bevis environment
+	\theoremstyle{nonumberplain}
+	\theoremheaderfont{%
+	\normalfont\itshape}
+	\theorembodyfont{\normalfont}
+	\theoremsymbol{\ensuremath{\square}}
+	\theoremseparator{.}
+	
+	\newtheorem{proof}{Bevis}
+	\newtheorem{los}{Løsning}
