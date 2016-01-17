@@ -87,7 +87,7 @@ Her er eksempler på kommandoer, man bruger meget, når man skriver matematik:
 
 Hvis du vil skrive en ekstra vigtigt udregning, kan man få den fremhævet ved at aktivere et matematikfelt inden i et matematikfelt. 
 Der skal altså stå 2 dollartegn i hver ende. 
-Med et normalt matematikfelt kommer det til at se sådan her ud: $a^2+b^2-2ab=(a-b)^2=(b-a)^2$. Med et dobbeltmatematikfelt ser det til gengæld sådan her ud: $$a^2+b^2-2ab=(a-b)^2=(b-a)^2$$
+Med et normalt matematikfelt kommer det til at se sådan her ud: $a^2+b^2-2ab=(a-b)^2=(b-a)^2$. Med et dobbelt matematikfelt ser det til gengæld sådan her ud: $$a^2+b^2-2ab=(a-b)^2=(b-a)^2$$
 
 \subsubsection{Øvelser}
 \begin{opg}
@@ -100,6 +100,49 @@ Skriv en udledning af alle de tre kvadratsætninger.
 
 \begin{opg}
 Skriv dette udtryk i et matematikfelt: $\dfrac{\sqrt{3} \cdot  x_{q^3}}{\dfrac{1}{2}}$
+\end{opg}
+
+\subsection{Kapitler, sektioner, undersektioner mm.}
+For at holde styr på dit dokument kan du gøre brug af sektioner og kapitler. 
+Disse sektioner og kapitler fungerer som overskrifter til dine afsnit. 
+Sektionerne er rangordnet i forhold til hinanden. 
+Eksempelvis er et kapitel højere rangeret end en sektion.
+Det betyder at der inden i et kapitel sagtens kan være flere forskellige sektioner.
+Som et eksempel kunne man have et kapitel om dyr.
+Inde i det kapitel kunne der så være en sektioner om pattedyr, fugle og insekter.
+Man kan så godt lave endnu et niveau under sektionerne. 
+Niveauet under sektioner er undersektioner.
+Eksempelvis kunne man have hunde, katte og grise som undersektioner til pattedyr.
+Som det forhåbentligt ses i eksemplerne, skal der altså gælde det at en undersektion skal ligge inden under alle de niveauer der er over den. 
+I eksemplet ses det som at grise relaterer sig til pattedyr, som relaterer sig til dyr generelt.
+I \LaTeX{} er der rigtig mange niveauer af sektioner.
+Herunder ses en liste over den alle i rangere rækkefølge, så den vigtigste er øverst:
+\bigbreak
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+	\hline \textbf{Dansk betegnelse} & \textbf{Engelsk betegnelse} & \textbf{Kommando}\\ \hline
+	Del & Part & \textbackslash part\{\} \\ \hline
+	Kapitel & Chapter & \textbackslash chapter\{\} \\ \hline
+	Sektion & Section & \textbackslash section\{\} \\ \hline
+	Undersektion & Subsection & \textbackslash subsection\{\} \\ \hline
+	Underundersektion & Subsubsection & \textbackslash subsubsection\{\} \\ \hline
+	Paragraf & Paragraph & \textbackslash paragraph\{\} \\ \hline
+	Underparagraf & Subparagraph & \textbackslash subparagraph\{\} \\ \hline
+\end{tabular}
+\end{center}
+
+Kolonnen yderst til højre viser, hvad man skal skrive, hvis man vil lave et afsnit.
+Afsnittets navn skal skrives inden mellem de krøllede parenteser.
+Som standard nummererer \LaTeX{} overskrifter. 
+Hvis man ikke er interesseret i det, kan man sætte en lille stjerne inden parenteserne.
+Vi anbefaler dog nummerering, da det gør det nemmere at referere til. 
+
+\subsubsection{Øvelser}
+\begin{opg}
+Lav et dokument hvor du kopierer strukturen i denne note. 
+Du skal altså bare indskrive overskrifterne ind på en måde så indholdsfortegnelsen bliver den samme.
 \end{opg}
 
 \end{document}
