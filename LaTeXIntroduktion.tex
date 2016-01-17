@@ -29,5 +29,65 @@
 
 \pagenumbering{arabic}
 \section{Installation og opsætning}
+\pagebreak
+
+\section{Skriv matematik i \LaTeX{} - alt efter \textbackslash begin\{document\}}
+\subsection{Tekst- og matematikfelter}
+Når man vil skrive matematik i \LaTeX{}, er det vigtigt at tænke over hvornår man skriver matematik og hvornår man skriver tekst.
+Som standard, når man skriver efter \textbackslash begin\{document\}, skriver man tekst. 
+Tekst skrevet på denne måde, vil blive printet i dokumentet, direkte som sætningen står.
+Vil man derimod skrive en formel eller en udregning, skriver man lige pludselig matematik.
+Når du vil skrive matematik skal du markere med to dollartegn (\$ \textit{matematik her} \$).
+Alt der står inden mellem disse to, vil blive formateret som matematik. 
+For at lave dem hurtigere kan man bruge genvejen: CTRL + SHIFT + M.
+Når man skriver i et matematikfelt ændrer den måde \LaTeX{} forstår dit input sig.
+For det første læser den ikke længere mellemrum. 
+Her ses forskellen på to ting hvor det ene er skrevet udenfor et matematikfelt og det andet er skrevet i et:
+\bigskip
+
+\begin{center}
+\begin{tabular}{|c|c|}
+	\hline Ikke i matematikfelt & I matematikfelt\\ \hline
+	Jeg elsker matematik & $Jeg elsker matematik$ \\ \hline
+\end{tabular}
+\end{center}
+
+Det er tydeligt at se, at det ikke er pænt at skrive tekst i et matematikfelt(hvilket også giver god mening ud fra navnet).
+Til gengæld er det meget pænere når man skriver matematik:
+\bigskip
+
+\begin{center}
+\begin{tabular}{|c|c|}
+	\hline Ikke i matematikfelt & I matematikfelt\\ \hline
+	a\^{}2 + b\^{}2 = c\^{}2 & $a^2 + b^2 = c^2$ \\ \hline
+\end{tabular}
+\end{center}
+
+Når man skriver i et matematikfelt bruger man ofte kommandoer til at få specielle tegn og bogstaver frem.
+En kommando starter altid med en "\textbackslash ".
+Det efterfølges af noget tekst, og derefter nogle krøllede parenteser ( \{ \} ). 
+Inden i de krøllede parenteser kan der skrives ting som har indflydelse på hvad der bliver printet på papiret. 
+Eksempelvis vil kommandoen \textbackslash dfrac\{\}\{\} lave en brøk med det der står i det første sæt parenteser i tælleren, og det andet sæt parenteser i nævneren.
+Således bliver \$\textbackslash dfrac\{a\}\{b\}\$ til $\dfrac{a}{b}$.
+Her er eksempler på kommandoer, man bruger meget, når man skriver matematik:
+\bigskip
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+	 \hline
+	 \textbf{Funktion} & \textbf{Kommando} & \textbf{Output} \\ \hline
+	 Potenser & \textbackslash e\^{}\{x\} & $e^x$ \\ \hline
+	 Nedsænket skrift & \textbackslash a\_\{n\} & $a_{n}$ \\ \hline
+	 Brøker & \textbackslash dfrac\{x\}\{y\} & $\frac{x}{y}$ \\ \hline
+	 Kvadratrod & \textbackslash sqrt\{3\} & $\sqrt{3}$\\ \hline
+	 Gangeprik & x \textbackslash cdot y & $x \cdot y$\\ \hline
+	 Implikationspil & \textbackslash Rightarrow (vigtigt med stort R) & $\Rightarrow$\\ \hline
+\end{tabular}
+\end{center}
+
+Hvis du vil skrive en ekstra vigtigt udregning, kan man få den fremhævet ved at aktivere et matematikfelt inden i et matematikfelt. 
+Der skal altså stå 2 dollartegn i hver ende. 
+Med et normalt matematikfelt kommer det til at se sådan her ud: $a^2+b^2-2ab=(a-b)^2=(b-a)^2$. Med et dobbeltmatematikfelt ser det til gengæld sådan her ud: $$a^2+b^2-2ab=(a-b)^2=(b-a)^2$$
+
 
 \end{document}
